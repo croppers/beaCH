@@ -9,7 +9,7 @@ window.snapKitInit = function () {
   var loginButtonIconId = 'my-login-button-target';
   // Mount Login Button
   snap.loginkit.mountButton(loginButtonIconId, {
-    clientId: '90c64e66-1f87-487d-bddc-03b5d012e7c3',
+    clientId: 'YOUR_ID_HERE',
     redirectURI: 'http://localhost:3000/',
     scopeList: [
       'user.display_name',
@@ -113,10 +113,10 @@ const showBeaches = (beaches) => {
       subscribeContainer.appendChild(afterSubscribeMessage);
       Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "snapkit@fastmail.com",
-        Password : "E6C006E03E277BFD5F13EBE9A7CAD0764156",
+        Username : "username@fastmail.com",
+        Password : "YOUR_APP_PASSWORD_HERE",
         To : emailValue,
-        From : "snapkit@fastmail.com",
+        From : "username@fastmail.com",
         Subject : String("Hey, " + nameValue + "!"),
         Body : "Thanks so much for dedicating your time to clean up the beach."
     }).then(
